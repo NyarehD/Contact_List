@@ -7,8 +7,9 @@
             <div class="card-body">
                 <?php
                 if (isset($_POST['add'])) {
-
-                    validate();
+                    if (validate()) {
+                      contactAdd();
+                    }
                 }
                 ?>
               <form method="POST" enctype="multipart/form-data" class="w-100">

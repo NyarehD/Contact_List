@@ -1,4 +1,6 @@
 <?php
+// General functions
+
 function setError($error, $errorMessage) {
     $_SESSION['error'][$error] = $errorMessage;
 }
@@ -11,15 +13,28 @@ function textFilter($text) {
     return stripslashes(htmlentities(trim($text)));
 }
 
+function redirect($l) {
+    header("location:$l");
+}
+
+function linkTo($l) {
+    echo "<script>location.href='$l'</script>";
+}
+
+
+function old($inputName) {
+    return isset($_POST[$inputName]) ? $_POST[$inputName] : "";
+}
+
 // Query
 function runQuery($sql) {
     $con = connectionToDB();
     return mysqli_query($con, $sql) ? true : die("Query Fail : " . mysqli_error($con));
 }
 
-function contacts() {
-    $sql = "SELECT * FROM contact_list";
-    return fetchAll($sql);
+function fetch($sql) {
+    $query = mysqli_query(connectionToDB(), $sql);
+    return mysqli_fetch_assoc($query);
 }
 
 function fetchAll($sql) {
@@ -31,12 +46,14 @@ function fetchAll($sql) {
     return $rows;
 }
 
-function redirect($l) {
-    header("location:$l");
+
+// For Contact CRUD
+function contacts() {
+    return fetchAll("SELECT * FROM contact_list");
 }
 
-function old($inputName) {
-    return isset($_POST[$inputName]) ? $_POST[$inputName] : "";
+function contact($id) {
+    return fetch("SELECT * FROM contact_list WHERE id='$id'");
 }
 
 function contactDelete($id) {
@@ -44,6 +61,28 @@ function contactDelete($id) {
     return runQuery($sql);
 }
 
+$savedLocation = "";
+function contactUpdate($id) {
+    global $savedLocation;
+    $name = $_POST['contact_name'];
+    $phone_number = $_POST['phone_number'];
+    $sql = "UPDATE contact_list SET contact_name='$name',phone_number='$phone_number',contact_photo='$savedLocation' WHERE id=$id";
+    if (runQuery($sql)) {
+        linkTo("index.php");
+    }
+}
+
+function contactAdd() {
+    global $savedLocation;
+    $name = textFilter($_POST['contact_name']);
+    $phone_number = textFilter($_POST['phone_number']);
+    $sql = "INSERT INTO contact_list (contact_name, phone_number, contact_photo) VALUES ('$name','$phone_number','$savedLocation')";
+    if (runQuery($sql)) {
+        linkTo("index.php");
+    }
+}
+
+// Form validation for contact add
 function validate() {
     $name = "";
     $phone_number = "";
@@ -80,26 +119,23 @@ function validate() {
 
     // Validating contact_photo
     $supportedImageType = ['image/png', 'image/jpeg'];
-    $savedLocation = "store/" . uniqid() . "-" . $_FILES["contact_photo"]["name"];
+    $GLOBALS['savedLocation'] = "store/" . uniqid() . "-" . $_FILES["contact_photo"]["name"];
     if ($_FILES['contact_photo']['name']) {
         $tempFile = $_FILES['contact_photo']['tmp_name'];
         if (in_array($_FILES['contact_photo']['type'], $supportedImageType)) {
-            move_uploaded_file($tempFile, $savedLocation);
+            move_uploaded_file($tempFile, $GLOBALS['savedLocation']);
         } else {
             setError("contact_photo", "JPEG and PNG Only");
-            print_r(1);
-            $errorStatus=1;
+            $errorStatus = 1;
         }
     } else {
         setError("contact_photo", "Contact Photo is required");
-        $errorStatus=1;
-        print_r(2);
+        $errorStatus = 1;
     }
 
-    $query = "INSERT INTO contact_list (contact_name, phone_number, contact_photo) VALUES ('$name', '$phone_number', '$savedLocation')";
     if ($errorStatus === 0) {
-        if (runQuery($query)) {
-          echo "<script>location.href='index.php'</script>" ;
-        }
+        return true;
+    } else {
+        return false;
     }
 }
