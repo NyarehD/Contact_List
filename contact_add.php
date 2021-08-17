@@ -1,10 +1,4 @@
-<?php require "template/head.php";
-$currentId = $_GET['id'];
-if (!isset($currentId)) {
-    redirect("index.php");
-}
-$currentRow = fetch("SELECT * FROM contact_list where id='$currentId'");
-?>
+<?php require "template/head.php" ?>
   <div class="container" id="newContact">
     <div class="row">
       <div class="col-12 col-md-10">
@@ -14,7 +8,7 @@ $currentRow = fetch("SELECT * FROM contact_list where id='$currentId'");
                 <?php
                 if (isset($_POST['add'])) {
                     if (validate()) {
-                      contactUpdate($currentId);
+                      contactAdd();
                     }
                 }
                 ?>
@@ -22,7 +16,7 @@ $currentRow = fetch("SELECT * FROM contact_list where id='$currentId'");
                 <div class="form-group mb-3">
                   <label for="contact_name" class="text-primary font-weight-bold">Name</label>
                   <input type="text" id="contact_name" name="contact_name" class="form-control"
-                         value="<?php echo $currentRow['contact_name']; ?> ">
+                         value="<?php echo old('contact_name') ?> ">
                     <?php if (getError('contact_name')) { ?>
                       <small class="text-danger font-weight-bolder"><?php echo getError('contact_name'); ?></small>
                     <?php }; ?>
@@ -30,7 +24,7 @@ $currentRow = fetch("SELECT * FROM contact_list where id='$currentId'");
                 <div class="form-group mb-3">
                   <label for="phone_number" class="text-primary font-weight-bold">Phone Number</label>
                   <input type="number" id="phone_number" name="phone_number" class="form-control"
-                         value="<?php echo $currentRow['phone_number'] ?>">
+                         value="<?php echo old('phone_number') ?>">
                     <?php if (getError("phone_number")) { ?>
                       <small class="text-danger font-weight-bolder"><?php echo getError("phone_number"); ?></small>
                     <?php }; ?>
@@ -39,7 +33,7 @@ $currentRow = fetch("SELECT * FROM contact_list where id='$currentId'");
                   <label for="contact_photo" class="text-primary font-weight-bold">Contact Photo</label>
                   <input type="file" class="custom-file" placeholder="Username" aria-label="Username"
                          aria-describedby="basic-addon1" id="contact_photo" name="contact_photo"
-                         accept="image/jpeg,image/png" value="<?php echo $currentRow['contact_photo']; ?> ">
+                         accept="image/jpeg,image/png">
                     <?php if (getError("contact_photo")) { ?>
                       <small class="text-danger font-weight-bolder"><?php echo getError("contact_photo"); ?></small>
                     <?php }; ?>
