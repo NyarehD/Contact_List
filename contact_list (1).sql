@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 17, 2021 at 10:59 AM
+-- Generation Time: Aug 17, 2021 at 03:50 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 7.4.22
 
@@ -39,15 +39,9 @@ CREATE TABLE `contact_list` (
 --
 
 INSERT INTO `contact_list` (`id`, `contact_name`, `phone_number`, `contact_photo`) VALUES
-(1, 'Nyareh', '29394234234', 'store/611b788c1c86c-k-dark-wallpaper.jpg'),
-(2, 'Nyareh kyaw', '344234234234', 'store/611b78ce9d40a-Brawl-Stars-Surge.png'),
-(3, 'Nyareh kyaw', '344234234234', 'store/611b78f917d1e-Brawl-Stars-Surge.png'),
-(4, 'Nyareh kyaw', '344234234234', 'store/611b790c9764d-Brawl-Stars-Surge.png'),
-(5, 'Nyareh kyaw', '344234234234', 'store/611b7916e8c77-Brawl-Stars-Surge.png'),
-(6, 'Nyareh kyaw', '344234234234', 'store/611b791cd8dbb-Brawl-Stars-Surge.png'),
-(7, 'Nyareh kyaw', '344234234234', 'store/611b7921304b4-Brawl-Stars-Surge.png'),
-(8, 'Nyareh kyaw', '344234234234', 'store/611b795f19295-Brawl-Stars-Surge.png'),
-(9, 'Nyareh', '234234234', 'store/611b7969ecc09-210716155045-red-vacunacion-medium-plus-169.jpg');
+(1, 'Nyareh David', '234234234234', 'store/611bb8f2887cc-Brawl-Stars-Surge.png'),
+(2, 'Sayar', '234234234234234', 'store/611bb9002b198-c38e06df.jpg'),
+(4, 'wasdfsadf', '234234678563452', 'store/611bba1a5786a-snake Cropped.png');
 
 --
 -- Indexes for dumped tables
@@ -67,7 +61,7 @@ ALTER TABLE `contact_list`
 -- AUTO_INCREMENT for table `contact_list`
 --
 ALTER TABLE `contact_list`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
