@@ -9,9 +9,9 @@
   <div class="row">
     <div class="col-10 d-flex justify-content-between">
       <button class="btn btn-primary" id="addContact"><i class="feather-plus"></i> ADD Contact</button>
-      <form class="form-inline">
+      <form class="form-inline" method="get" action="<?php echo $url;?>/search.php">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
-               name="search_key">
+               name="search_contact">
         <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>

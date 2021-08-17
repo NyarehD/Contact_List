@@ -5,63 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00c5864c-6d00-42a2-9ac9-36968be5c70c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/20352ce1-7ae4-4928-8207-e6f5329830ea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/20352ce1-7ae4-4928-8207-e6f5329830ea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/20352ce1-7ae4-4928-8207-e6f5329830ea/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/20352ce1-7ae4-4928-8207-e6f5329830ea/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/20352ce1-7ae4-4928-8207-e6f5329830ea/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/20352ce1-7ae4-4928-8207-e6f5329830ea/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/20352ce1-7ae4-4928-8207-e6f5329830ea/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/20352ce1-7ae4-4928-8207-e6f5329830ea/entities/entities.dat.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/20352ce1-7ae4-4928-8207-e6f5329830ea/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/20352ce1-7ae4-4928-8207-e6f5329830ea/entities/entities.dat.values.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/20352ce1-7ae4-4928-8207-e6f5329830ea/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/20352ce1-7ae4-4928-8207-e6f5329830ea/entities/entities.dat_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/74648636-826b-44bd-b10e-1546a9754fb6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/74648636-826b-44bd-b10e-1546a9754fb6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/74648636-826b-44bd-b10e-1546a9754fb6/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/74648636-826b-44bd-b10e-1546a9754fb6/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/74648636-826b-44bd-b10e-1546a9754fb6/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/74648636-826b-44bd-b10e-1546a9754fb6/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/74648636-826b-44bd-b10e-1546a9754fb6/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/74648636-826b-44bd-b10e-1546a9754fb6/entities/entities.dat.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/74648636-826b-44bd-b10e-1546a9754fb6/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/74648636-826b-44bd-b10e-1546a9754fb6/entities/entities.dat.values.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/74648636-826b-44bd-b10e-1546a9754fb6/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/74648636-826b-44bd-b10e-1546a9754fb6/entities/entities.dat_i" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact_add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact_edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/function.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b7432d5936-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b7461e72e6-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b74652528a-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b74745f182-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b747787351-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b74de06a3b-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b75388b999-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b75468123b-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b7558e2ac3-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b763c3cd75-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b76b9189ba-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b76e10f053-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b7709e5054-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b7719e0ffe-k-dark-wallpaper.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b77538725c-k-dark-wallpaper.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b7777a8bbf-k-dark-wallpaper.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b778109b32-k-dark-wallpaper.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b77a0c66c5-k-dark-wallpaper.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b77a9a524e-k-dark-wallpaper.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b788c1c86c-k-dark-wallpaper.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b78ce9d40a-Brawl-Stars-Surge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b78f917d1e-Brawl-Stars-Surge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b790c9764d-Brawl-Stars-Surge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b7916e8c77-Brawl-Stars-Surge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b791cd8dbb-Brawl-Stars-Surge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b7921304b4-Brawl-Stars-Surge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b795f19295-Brawl-Stars-Surge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b7969ecc09-210716155045-red-vacunacion-medium-plus-169.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b83f689ae1-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b87ab0d642-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b8d3c990d5-210716155045-red-vacunacion-medium-plus-169.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b8d4bbd9c8-210716155045-red-vacunacion-medium-plus-169.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b91646dd45-210716155045-red-vacunacion-medium-plus-169.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b918f233e5-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b91eb914de-210716155045-red-vacunacion-medium-plus-169.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b9268d0b77-c38e06df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b92ad3fb0d-Brawl-Stars-Surge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b92d9e12fb-210716155045-red-vacunacion-medium-plus-169.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/611b934190abf-Screenshot 2021-06-30 at 14-42-16 Marketing Cropped.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +49,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -121,7 +69,7 @@
       <updated>1629193097182</updated>
       <workItem from="1629193099010" duration="1015000" />
       <workItem from="1629194140075" duration="2883000" />
-      <workItem from="1629203323863" duration="3462000" />
+      <workItem from="1629203323863" duration="4082000" />
     </task>
     <servers />
   </component>

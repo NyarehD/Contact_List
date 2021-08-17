@@ -139,3 +139,10 @@ function validate() {
         return false;
     }
 }
+
+// For search Function
+
+function searchContacts($searchKey) {
+    $sql = "SELECT * FROM contact_list WHERE contact_list.contact_name LIKE '%$searchKey%' OR contact_list.phone_number LIKE '%$searchKey%' ORDER BY id DESC";
+    return fetchAll($sql);
+}
